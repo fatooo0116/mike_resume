@@ -13,20 +13,24 @@ class Portfolio extends Component{
   render(){
     return(
 
-      <section className="pt-page">
+      <section className="pt-page  mywork">
         <div  className="section-inner">
               <div className="section-title-block second-style">
                   <h2 className="section-title">Portfolio</h2>
                   <h5 className="section-description">My Work</h5>
               </div>
               <div className="section-content  allportfolio">
-                <Row>
+                <Row className="filter">
                   <Col sm={12} md={12} lg={12}>
-                          <div className="inner-content">
-                              <div className="fill-block">
-                                  <div  className="map" >Map</div>
-                              </div>
-                          </div>
+                      <div  className="portfolio">
+                        <ul>
+                          <li><a href="#" className="active">All</a></li>
+                          <li><a href="#" className="">Frontend</a></li>
+                          <li><a href="#" className="">Website</a></li>
+                          <li><a href="#" className="">CRM</a></li>
+                          <li><a href="#" className="">Ecommerce</a></li>
+                        </ul>
+                      </div>
                   </Col>
                 </Row>
 
@@ -56,7 +60,16 @@ class Portfolio extends Component{
                         </div>
                     </figure>
                   </Col>
-                  <Col xs={12} sm={3} >
+
+                  <Col xs={12} sm={4} >
+                          <figure className="inner-content">
+                              <div className="portfolio-item-img">
+                                  <img src={pic1} alt="" title="" />
+                                  <Link  to="/project" className="pt-trigger "  >Website1</Link>
+                              </div>
+                          </figure>
+                  </Col>
+                  <Col xs={12} sm={4} >
                     <figure className="inner-content">
                         <div className="portfolio-item-img">
                             <img src={pic1} alt="" title="" />
@@ -64,6 +77,40 @@ class Portfolio extends Component{
                         </div>
                     </figure>
                   </Col>
+                  <Col xs={12} sm={4} >
+                    <figure className="inner-content">
+                        <div className="portfolio-item-img">
+                            <img src={pic1} alt="" title="" />
+                            <Link  to="/project" className="pt-trigger "  >Website1</Link>
+                        </div>
+                    </figure>
+                  </Col>
+
+                  <Col xs={12} sm={4} >
+                          <figure className="inner-content">
+                              <div className="portfolio-item-img">
+                                  <img src={pic1} alt="" title="" />
+                                  <Link  to="/project" className="pt-trigger "  >Website1</Link>
+                              </div>
+                          </figure>
+                  </Col>
+                  <Col xs={12} sm={4} >
+                    <figure className="inner-content">
+                        <div className="portfolio-item-img">
+                            <img src={pic1} alt="" title="" />
+                            <Link  to="/project" className="pt-trigger "  >Website1</Link>
+                        </div>
+                    </figure>
+                  </Col>
+                  <Col xs={12} sm={4} >
+                    <figure className="inner-content">
+                        <div className="portfolio-item-img">
+                            <img src={pic1} alt="" title="" />
+                            <Link  to="/project" className="pt-trigger "  >Website1</Link>
+                        </div>
+                    </figure>
+                  </Col>
+
                 </Row>
               </div>
 

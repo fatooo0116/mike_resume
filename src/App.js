@@ -7,6 +7,7 @@ import Portfolio from './components/portfolio';
 import Contact from './components/contact';
 import Project from './components/project';
 
+import { AnimatedSwitch } from 'react-router-transition';
 
 import {
   BrowserRouter,
@@ -23,6 +24,9 @@ class App extends Component {
   render() {
     return (
     <BrowserRouter>
+
+
+
       <div className="App"  id="page">
 
          {/* Header */}
@@ -34,18 +38,28 @@ class App extends Component {
            <div className="pt-wrapper" >
              <div  className="subpages">
 
-
+               <AnimatedSwitch
+                 atEnter={{
+                   opacity: 0,
+                   top:'100px'
+                  }}
+                 atLeave={{ opacity: 0 }}
+                 atActive={{ opacity: 1 }}
+                 className="switch-wrapper"
+               >
                  <Route exact path="/"  component={About} render={console.log("change")} />
                  <Route exact path="/resume"  component={Resume} />
                  <Route exact path="/portfolio"  component={Portfolio} />
                  <Route exact path="/contact"  component={Contact} />
                  <Route exact path="/project"  component={Project} />
+                </AnimatedSwitch>
              </div>{ /* --  subpages */ }
           </div>
          </div>
 
          {/* End Page */}
       </div>
+
     </BrowserRouter>
 
     );

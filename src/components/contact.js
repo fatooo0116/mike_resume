@@ -53,14 +53,23 @@ class Contact extends Component{
                               </div>
                           </div>
                   </Col>
-                  <Col xs={12} sm={3} >
+                </Row>
+                <br/><br/>
+                <Row>
+                  <Col xs={2} xm={2} ></Col>
+                  <Col xs={8} xm={8} >
+                    <div class="block-title">
+                        <h3>How Can I Help You?<span></span></h3>
+                    </div>
+
                           <div className="inner-content">
-                              <div className="fill-block">
-                                  <div  className="map" >Map</div>
-                              </div>
+                            <form >
+                              form
+                            </form>
                           </div>
                   </Col>
                 </Row>
+
               </div>
 
 

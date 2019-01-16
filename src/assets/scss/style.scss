@@ -1,5 +1,20 @@
+img{ max-width:100%; }
+
 @import "bootstrap/bootstrap";
+
+@import "font/icon.scss";
+
 @import "tpl/header";
 @import "tpl/portfolio";
 @import "tpl/resume";
+@import "tpl/about";
+@import "tpl/mywork";
 @import "tpl/main";
+
+.switch-wrapper {
+  position: relative;
+}
+
+.switch-wrapper > div {
+  // position: absolute;
+}
